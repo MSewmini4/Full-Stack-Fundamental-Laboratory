@@ -33,7 +33,6 @@ p{
 header{
     margin:20px 5% 0;
     border-bottom:3px solid #f56a6a;
-    padding-bottom:12px;
 
     display: flex;
     justify-content:space-between;
@@ -70,9 +69,7 @@ nav a.active{
     display:block;
 }
 
-.intro{
-    padding:18px 0 45px;
-}
+
 
 .intro h1{
     font-family:Georgia,serif;
@@ -82,10 +79,10 @@ nav a.active{
 }
 
 .intro p{
-    max-width:500px;
+    max-width:800px;
     color:#808b96;
     font-size:17px;
-    margin:150px 0;
+    margin:15px 0;
 }
 
 .intro subtitle{
@@ -172,6 +169,11 @@ footer{
     font-size:12px;
 }
 
-
+.intro p{
+    max-width: 500px;
+    color: #808b96;
+    font-size: 17px;
+    margin: 15px 0; /* Reduced from 150px to 15px */
+}
 
 

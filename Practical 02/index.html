@@ -26,9 +26,14 @@
     </nav>
 
     <main>
+
+       
         <section id="home" class="bg-light text-center py-5" style="background-color:#cad0d5">
             <div class="container">
-                <h1 class="display-4">Welcome to the LMS Platform</h1>
+                <h1 class="display-4">
+                    <span id="greeting"></span><br>
+                    Welcome to the LMS Platform
+                </h1>
                 <p class="lead">Your gateway to knowledge and success. Explore a wide variety of courses and resources.</p>
                 <a href="#courses" class="btn btn-primary" style="background-color:#007bff">Get Started.</a>
             </div>
@@ -71,7 +76,7 @@
 
 
     <section class="card" style="max-width: 320px">
-  <img src="..." class="card-img-top" alt="...">
+  <img src="images/web-development.jpg.jpeg" class="card-img-top" alt="Web Development course">
   <div class="card-body">
     <h4 class="card-title">Web Development</h4>
     <p class="card-text">Learn to build modern,responsive websites using HTML,CSS and JavaScript.</p>
@@ -80,7 +85,7 @@
 </section>
 
 <section class="card" style="max-width: 320px">
-  <img src="..." class="card-img-top" alt="...">
+  <img src="images/data-science.jpg.jpeg" class="card-img-top" alt="Data Science course">
   <div class="card-body">
     <h4 class="card-title">Data Science</h4>
     <p class="card-text">Master data Analysis,visualization and machine learning techniques.</p>
@@ -89,7 +94,7 @@
 </section>
 
 <section class="card" style="max-width: 320px">
-  <img src="..." class="card-img-top" alt="...">
+  <img src="images/digital-marketing.jpg.jpeg" class="card-img-top" alt="Digital Marketing course">
   <div class="card-body">
     <h4 class="card-title">Digital Marketing</h4>
     <p class="card-text">Understand SEO,social media marketing and online branding strategies.</p>
@@ -113,6 +118,20 @@
         </nav>
     </div>
 </footer>
+
+<script>
+    const hour=new Date().getHours();
+    let greeting;
+
+    if(hour<12){
+        greeting="Good Morning";
+    }else if (hour<18){
+        greeting="Good Afternoon";
+    }else{
+        greeting="Good Evening";
+    }
+    document.getElementById("greeting").textContent=greeting;
+</script>
 
 </body>
 
